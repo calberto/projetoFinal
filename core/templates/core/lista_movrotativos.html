@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block menu%}
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+			<a class="nav-link" href="{% url 'core_home' %} ">Home</a>
+		</li>
+		
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle  active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servicos</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item active" href="{% url 'core_lista_pessoas' %}">Pessoas</a>
+					<a class="dropdown-item" href="{% url 'core_lista_veiculos' %}">Veículos</a>
+					<a class="dropdown-item" href="{% url 'core_movrotativo_novo' %}">Rotativo</a>
+				
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="{% url 'core_mensalista_novo' %}">Mensalistas</a>
+				</div>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{% url 'core_home' %} ">Logout</a>
+		</li>
+		
+	</ul>
+{% endblock%}
+
+{% block main %} 
+<<<<<<< HEAD
+		
+	<div class="row">
+		<div class="col-sm-6">
+			<h1>Cadastro</h1>
+=======
+
+	<div class="row">
+		<div class="col-12">
+			<h1>Lista Rotativos</h1>
+		</div>
+	</div>	
+	
+	<div class="row">
+		<div class="col-sm-6">
+		
+>>>>>>> 8aaa8fa7274a57f1c5dd7c0e8ddcdfdc4e12fc57
+			<form action="{% url 'core_movrotativo_novo' %}" method="POST">
+				{% csrf_token %}
+				
+				{{ form.as_p}}
+				
+				<button type="submit" class="btn btn-primary">Cadastrar</button>
+			</form>
+		</div>
+	
+		<div class="col-sm-6">
+<<<<<<< HEAD
+				
+			<h1>Lista  Rotativo</h1>
+			<table class="table">
+				<thead class="thead-dark">
+				  <tr>
+					<th scope="col">ID</th>
+					<th scope="col">Veículo</th>
+					<th scope="col">Checkin</th>
+					<th scope="col">Checkout</th>
+					<th scope="col">Valor Hora</th>
+					<th scope="col">Pago</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  {% for movrotativo in movrotativos %}
+					<tr>
+						<th scope="row">{{ movrotativo.id}}</th>
+						<td>{{ movrotativo.veiculo}}</td>
+						<td>{{ movrotativo.checkin}}</td>
+						<td>{{ movrotativo.checkout}}</td>
+						<td>R${{ movrotativo.valor_hora}}</td>
+						<td>{{ movrotativo.pago}}</td>
+					</tr>
+				  {% endfor %}
+				 
+				</tbody>
+			  </table>
+=======
+	
+	
+			<ul>
+				{% for movrotativo in movrotativos %}
+					<li>
+						<a href="{% url 'core_movrotativo_update' movrotativo.id %}">{{ movrotativo.veiculo}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+>>>>>>> 8aaa8fa7274a57f1c5dd7c0e8ddcdfdc4e12fc57
+		<div>
+	</div>
+{% endblock %}

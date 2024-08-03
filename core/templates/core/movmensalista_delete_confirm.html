@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block main %}
+
+	<div class="row">
+		<div class="col">
+			<h2>Tem certeza que quer deletar: {{ movmensalista }}</h2>			
+
+			<form method="POST" action="{% url 'core_movmensalista_delete_confirm' movmensalista.id %}">
+				{% csrf_token %}
+				<button type="submit", class="btn btn-danger">Deletar</button>
+			</form>
+		</div>
+	</div>
+	
+{% endlock %}

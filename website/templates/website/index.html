@@ -1,0 +1,96 @@
+<<<<<<< HEAD
+{% extends 'website/base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+	<div class="row row-space">
+		<div class="col-6">
+			Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. 
+			Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! 
+			Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Pra lá , 
+			depois divoltis porris, paradis.
+
+		</div>
+		<div class="col-6">
+			Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. 
+			Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! 
+			Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Pra lá , 
+			depois divoltis porris, paradis.
+
+		</div>
+	</div>
+	<div class="row row-space">	
+		<div class="col-5">
+				Per aumento de cachacis, eu reclamis. Posuere libero varius.
+				Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.
+				Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, 
+				vitae iaculis nisl. In elementis mé pra quem é amistosis quis leo.
+		</div>
+		<div class="col-2">
+			<img src="{% static  'img/friend.jpg'  %}" alt="Estacionamento 24 horas" class="src" width="150" height="150">
+		</div>
+		<div class="col-5">
+			Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. 
+			Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! 
+			Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Pra lá , 
+			depois divoltis porris, paradis.
+		</div>
+	</div>
+	<div class="row row-space">
+		<div class="col-6">
+			Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. 
+			Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! 
+			Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Pra lá , 
+			depois divoltis porris, paradis.
+
+		</div>
+		<div class="col-6">
+				Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. 
+				Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! 
+				Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Pra lá , 
+				depois divoltis porris, paradis.
+
+		</div>
+	</div>
+
+=======
+{% extends 'base.html' %}
+
+{% block menu%}
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+			<a class="nav-link active" href="{% url 'core_home' %}">Home</a>
+		</li>
+		
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria -ha>Dropdown</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="{% url 'core_home' %}">Home</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</div>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Separated link</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Link</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link disabled" href="#">Disabled</a>
+		</li>
+
+	</ul>
+{% endblock%}<br/>
+
+{% block main %}
+	<div class="row">
+		<div class="col">
+			<h1>Seja bem vindo ao Sistema!</h1>
+
+            <a href="/admin/login/?next=/sistema">Clique aqui para entrar</a>
+		</div>
+	</div>
+>>>>>>> 8aaa8fa7274a57f1c5dd7c0e8ddcdfdc4e12fc57
+{% endblock %}

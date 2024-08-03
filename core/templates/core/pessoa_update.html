@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block main %}
+
+	<div class="row">
+		<div class="col">
+			<h2>Updating Pessoa: {{ pessoa }}</h2>
+
+			<form action="{% url 'core_pessoa_update' pessoa.id %}" method="POST">
+				{% csrf_token %}
+				
+				{{ form.as_p}}
+				
+				<button type="submit", class="btn btn-primary">Salvar</button>
+				<a href="{% url 'core_pessoa_delete_confirm' pessoa.id %}", class="btn btn-danger">Deletar</a>
+			</form>
+		</div>
+	</div>
+	
+{% endblock %}	

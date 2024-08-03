@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+<<<<<<< HEAD
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Website - Estacionamento</title>
+=======
+    <title>Document</title>
+>>>>>>> 8aaa8fa7274a57f1c5dd7c0e8ddcdfdc4e12fc57
+</head>
+
+<body>
+    <div class="container-fluid">
+<<<<<<< HEAD
+        <div class="row">
+            <div class="col-6">
+                <h1>Estacionamento 24 Horas</h1>
+                <span>coloque o slogan da sua empresa aqui</span>
+            </div>		
+            <div class="col-6">
+                <img src="{% static  'img/car.jpeg'  %}" alt="Estacionamento 24 horas" class="src">
+            </div>
+        </div>
+        {% block menu %}
+            {% include 'website/menu.html' %}
+        {% endblock %}    
+
+        {% block main%}
+        {% endblock %}
+        {% include 'website/footer.html' %}
+
+    </div>    
+=======
+
+        {% block menu%}
+        {% endblock %}
+        {% block main %}
+        {% endblock %}
+    </div>
+>>>>>>> 8aaa8fa7274a57f1c5dd7c0e8ddcdfdc4e12fc57
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 8aaa8fa7274a57f1c5dd7c0e8ddcdfdc4e12fc57
+</body>
+
+
+</html>
